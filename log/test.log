@@ -1146,3 +1146,309 @@ Processing by UsersController#new as HTML
   Rendered layouts/_footer.html.erb (0.2ms)
 Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (113.4ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (5.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (6.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (5.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (6.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150313062246')[0m
+  [1m[35m (73.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150313060313')
+  [1m[36m (17.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150313032051')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (27.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (30.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35m (66.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------
+SiteLayoutTest: test_layout_links
+---------------------------------
+Started GET "/" for 127.0.0.1 at 2015-03-16 12:00:06 +0800
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (128.3ms)
+Warning. Error encountered while saving cache bb2129f5d9b9baeeb0488e1f05219a75c4de08cd/custom.css.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d76a27363b9325b18d97107026769075cd519482/_bootstrap-sprockets.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d76a27363b9325b18d97107026769075cd519482/bootstrap.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_variables.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_mixins.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_hide-text.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_opacity.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_image.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_labels.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_reset-filter.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_resize.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_size.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_tab-focus.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_text-emphasis.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_text-overflow.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_alerts.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_buttons.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_panels.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_pagination.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_list-group.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_nav-divider.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_forms.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_progress-bar.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_table-row.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_background-variant.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_border-radius.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_gradients.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_clearfix.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_center-block.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_grid-framework.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache 57ec67f80f1233523c5304b5b1b0cb9af036c481/_grid.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_normalize.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_print.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_glyphicons.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_scaffolding.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_type.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_code.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_grid.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_tables.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_forms.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_buttons.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_component-animations.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_dropdowns.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_button-groups.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_input-groups.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_navs.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_navbar.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_pagination.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_pager.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_labels.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_badges.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_jumbotron.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_thumbnails.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_alerts.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_progress-bars.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_media.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_list-group.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_panels.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_responsive-embed.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_wells.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_close.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_modals.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_tooltip.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_popovers.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_carousel.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_utilities.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+Warning. Error encountered while saving cache d52fa6840c6b35e1049a10c56a41adad7480607f/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x00000006a0f8b0>
+
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 16624ms (Views: 16549.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------
+UserTest: test_should_be_valid
+------------------------------
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+UserTest: test_email_should_not_be_too_long
+-------------------------------------------
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------
+UserTest: test_email_should_be_present
+--------------------------------------
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('     ') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+-------------------------------------
+UserTest: test_name_should_be_present
+-------------------------------------
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------------
+UserTest: test_email_validation_should_accept_valid_addresses
+-------------------------------------------------------------
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('USER@foo.COM') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('A_US-ER@foo.bar.org') LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('first.last@foo.jp') LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('alice+bob@baz.cn') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------
+UserTest: test_password_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+------------------------------------------
+UserTest: test_name_should_not_be_too_long
+------------------------------------------
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+UserTest: test_email_addresses_should_be_unique
+-----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36mSQL (8.8ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Example User"], ["email", "user@example.com"], ["password_digest", "$2a$04$eaZE76I65/fMYCS0I7AzD.v8Gxc5voyQgBx./SYPqGy8410CK1Yg2"], ["created_at", "2015-03-16 04:00:24.131811"], ["updated_at", "2015-03-16 04:00:24.131811"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('USER@EXAMPLE.COM') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsersSignupTest: test_invalid_signup_information
+------------------------------------------------
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 12:00:24 +0800
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (107.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 128ms (Views: 127.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+Started POST "/users" for 127.0.0.1 at 2015-03-16 12:00:24 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"user@invalid", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user@invalid') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered shared/_error_messages.html.erb (3.8ms)
+  Rendered users/new.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 24ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------
+UsersControllerTest: test_should_get_new
+----------------------------------------
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+StaticPagesControllerTest: test_should_get_about
+------------------------------------------------
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------
+StaticPagesControllerTest: test_should_get_contact
+--------------------------------------------------
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+StaticPagesControllerTest: test_should_get_help
+-----------------------------------------------
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------------
+StaticPagesControllerTest: test_should_get_home
+-----------------------------------------------
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
